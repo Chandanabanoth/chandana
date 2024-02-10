@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video id="myvideo">
+        <source src="videoplayback.mp4" >
+    </video>
+<br>
+<button onclick="play()">play</button>
+<button onclick="pause()">pause</button>
+<button onclick="zoomIn()">zoomIn</button>
+<button onclick="zoomout()">zoomOut</button>
+
+<script>
+var video = document.getElementById('myvideo');
+
+function play(){
+    video.play();
+}
+
+function pause(){
+video.pause();
+
+}
+function zoomIn(){
+    video.width = 1000;  
+}
+function zoomout(){
+    video.width=300;
+}
+</script>
+
+</body>
+</html>
